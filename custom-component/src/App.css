@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 100px;
 }
 
 .App-logo {
@@ -65,10 +66,6 @@
   transition: 0.4s;
 }
 
-.slider.round {
-  border-radius: 34px;
-}
-
 /* slider-ball */
 .slider:before {
   position: absolute;
@@ -81,10 +78,6 @@
   transition: 0.4s;
 }
 
-.slider.round:before {
-  border-radius: 50%;
-}
-
 /* move */
 input:checked + .slider {
   background-color:#4900CE;
@@ -94,3 +87,16 @@ input:checked + .slider:before {
   transform: translateX(46px);
 }
 
+/*rounded*/
+.slider.rounded{
+  border-radius: 34px;
+}
+
+.slider.rounded:before{
+  border-radius: 50px;
+}
+
+/* toggle-text */
+.toggle-text {
+  width:00px;
+}

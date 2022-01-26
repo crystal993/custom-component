@@ -1,13 +1,18 @@
 import React from 'react';
 import "../App.css"
+import cx from "classname";
 
-const Toggle = (props) => {
+const Toggle = ({ rounded = false, isToggled, onToggle, ToggleText, ToggleTextNum }) => {
+
+    const sliderCX = cx('slider', {
+        rounded: rounded
+    })
 
     return (
         <label className='toggle'>
-            <input type="checkbox"/>
-            <span className='slider round'/>
-            <p className='toggle-text'>Toggle Switch OFF</p>
+            <input type="checkbox" checked={isToggled} onChange={onToggle}/>
+            <span className={sliderCX}/>
+            <p className='toggle-text'>{ToggleText[ToggleTextNum]}</p>
         </label>
     );
 }

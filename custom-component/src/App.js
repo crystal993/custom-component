@@ -5,11 +5,26 @@ import Toggle from './component/Toggle';
 
 function App() {
 
-  let[isChecked, handleToggle] = useState(true)
+  const [isToggled, setIsToggled] = useState(false)
+  const [ToggleTextNum, setToggleTextNum] = useState(0)
+
+  const ToggleText = ["Toggle Switch OFF","Toggle Switch On"]
+
+  // Toggle 변경 함수
+  const changeToggle = ()=>{
+
+    setIsToggled(!isToggled)
+
+    if(isToggled){
+      setToggleTextNum(0)
+    } else {
+      setToggleTextNum(1)
+    }
+  }
 
   return (
     <div className="App">
-      <Toggle isChecked={isChecked} handleToggle={handleToggle}/>
+      <Toggle rounded={true} isToggled={isToggled} onToggle={changeToggle} ToggleTextNum={ToggleTextNum} ToggleText={ToggleText} />
     </div>
   );
 }
