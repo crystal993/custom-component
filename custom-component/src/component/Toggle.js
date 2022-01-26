@@ -1,13 +1,13 @@
 import React from 'react';
-import '../App.css';
+import "../App.css"
 
 const Toggle = (props) => {
-    const {isChecked, handleToggle} = props;
 
     return (
-        <label className='switch'>
+        <label className='toggle'>
             <input type="checkbox"/>
-            <span className='slider'/>
+            <span className='slider round'/>
+            <p className='toggle-text'>Toggle Switch OFF</p>
         </label>
     );
 }
