@@ -83,3 +83,8 @@
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* move */
+input:checked + .slider:before {
+  transform: translateX(46px);
+}
