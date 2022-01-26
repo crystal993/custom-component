@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.toggle-label {
+  position: relative;
+  height: 26px;
+  width:50px;
+}
