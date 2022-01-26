@@ -68,23 +68,3 @@
   border-radius: 34px;
 }
 
-/* slider-ball */
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.slider:before {
-  position: absolute;
-  content:"";   
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom:4px;
-  background-color: white;
-  transition: 0.4s;
-}
-
-/* move */
-input:checked + .slider:before {
-  transform: translateX(46px);
-}
