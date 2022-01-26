@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin: 100px;
+  margin-top: 100px;
 }
 
 .App-logo {
@@ -56,14 +56,17 @@
 .slider {
   position: absolute;
   cursor: pointer;
+  width:80px;
 
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 
-  background-color: #eee;
+  background-color: var(--background-color);
   transition: 0.4s;
+  --background-color: #eee;
+  --accent-color: #4900CE;
 }
 
 /* slider-ball */
@@ -72,6 +75,7 @@
   content:"";   
   height: 26px;
   width: 26px;
+  top:4px;
   left: 4px;
   bottom:4px;
   background-color: white;
@@ -80,7 +84,7 @@
 
 /* move */
 input:checked + .slider {
-  background-color:#4900CE;
+  background-color: var(--accent-color);
 }
 
 input:checked + .slider:before {
@@ -98,5 +102,6 @@ input:checked + .slider:before {
 
 /* toggle-text */
 .toggle-text {
-  width:00px;
+  margin-left:-20px;
+  width:130px;
 }

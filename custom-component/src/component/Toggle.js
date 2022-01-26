@@ -6,7 +6,7 @@ const Toggle = ({ rounded = false, isToggled, onToggle, ToggleText, ToggleTextNu
 
     const sliderCX = cx('slider', {
         rounded: rounded
-    })
+    },'slider-background-slide')
 
     return (
         <label className='toggle'>
